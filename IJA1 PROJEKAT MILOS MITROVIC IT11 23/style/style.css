@@ -1,0 +1,391 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #233142;
+    height: 70px;
+}
+
+.header .name{
+    width: 300px;
+}
+
+.header .name a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.header .name h1{
+    text-align: center;
+    color: white;
+}
+
+.nav-menu{
+    margin-right: 50px;
+}
+
+.nav-menu .nav-item{
+    list-style-type: none;
+    display: inline;
+    padding: 15px;
+    margin: 0px 20px;
+    border: 1px solid white;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+.nav-menu .nav-item a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav-menu .nav-item:hover{
+    background-color: #455d7a;
+    border: 1px solid #455d7a;
+}
+
+.popusti{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.popusti-kartica{
+    background-color: white;
+    height: 350px;
+    width: 200px;
+    margin: 0px 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px #f95959;
+}
+
+.popusti-kartica .image img{
+    height: 200px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.podaci .naziv-uredjaja{
+    text-align: center;
+    font-size: 22px;
+}
+
+.podaci a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.podaci .cena-uredjaja{
+    text-align: center;
+    color: #f95959;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.popusti-kartica:hover{
+    img{
+        opacity: 0.7;
+    }
+    a{
+        color: gray;
+    }
+}
+
+.body{
+    background-image: url('../images/background2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.store{
+    width: 85%;
+    margin: auto;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgb(180, 180, 180);
+}
+
+.store .na-popustu{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: wheat;
+}
+
+.store .na-stanju{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.obicna-kartica{
+    background-color: white;
+    height: 350px;
+    width: 200px;
+    margin: 0px 30px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 15px rgb(180, 180, 180);
+}
+
+.obicna-kartica .image img{
+    height: 200px;
+    width: 100%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.podaci2 h2{
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.podaci2 p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.obicna-kartica:hover{
+    img{
+        opacity: 0.7;
+    }
+    a{
+        color: gray;
+    }
+}
+
+.body-kontakti{
+    background-image: url('../images/background3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.forma{
+    background-color: white;
+    width: 800px;
+    margin: 50px;
+    border-radius: 40px;
+    box-shadow: 3px 3px 15px rgb(180, 180, 180);
+    display: block;
+}
+
+.naslov-forme{
+    display: flex;
+    justify-content: center;
+}
+
+.sadrzaj-forme{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.p-polje{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.p-polje p{
+    margin: 10px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input-polje{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.input-polje input{
+    width: 350px;
+    height: 30px;
+    border: 2px solid salmon;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgb(180, 180, 180);
+}
+
+.input-polje textarea{
+    width: 350px;
+    height: 120px;
+    border: 2px solid salmon;
+    border-radius: 12px;
+    box-shadow: 3px 3px 15px rgb(180, 180, 180);
+}
+
+.input-polje .dugme{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    animation-name: dugme-animacija;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.input-polje .dugme:hover{
+    background-color: #f95959;
+    color: white;
+}
+
+@keyframes dugme-animacija{
+    0%{
+        background-color: #f95959;
+    }
+
+    20%{
+        background-color: #ff9696;
+    }
+
+    40%{
+        background-color: rgb(255, 82, 63);
+    }
+
+    60%{
+        background-color: pink;
+    }
+
+    80%{
+        background-color: rgb(160, 73, 64);
+    }
+
+    100%{
+        background-color: #f95959;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:425px){
+    .header{
+        width: 100%;
+        height: 150px;
+        display: block;
+    }
+
+    .header .name{
+        width: 100%;
+        height: 60px;
+        padding: 15px 0px;
+    }
+
+    .name h1{
+        margin: 5px;
+    }
+
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .nav-menu .nav-item{
+        height: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .nav-menu .nav-item a{
+        font-size: 15px;
+    }
+
+    .popusti{
+        display: block;
+        width: 100%;
+        height: 700px;
+        padding: 10px 0px;
+    }
+
+    .popusti-kartica{
+        height: 180px;
+        width: 120px;
+        margin: 10px auto;
+        margin-bottom: 30px;
+    }
+
+    .popusti-kartica .image{
+        display: flex;
+        justify-content: center;
+    }
+
+    .popusti-kartica .image img{
+        height: 100px;
+    }
+
+    .podaci .naziv-uredjaja{
+        font-size: 15px;
+        margin: 0px;
+    }
+    .podaci .cena-uredjaja{
+        font-size: 15px;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px){
+    .nav-menu{
+        display: flex;
+        justify-content: center;
+        margin: 15px 0px;
+        padding: 0px;
+    }
+    .nav-menu .nav-item{
+        padding: 10px;
+    }
+    .nav-menu .nav-item a{
+        font-size: 20px;
+
+    }
+    .popusti-kartica{
+        height: 300px;
+        width: 150px;
+    }
+    .popusti-kartica .image{
+        display: flex;
+        justify-content: center;
+    }
+    .popusti-kartica .image img{
+        height: 150px;
+    }
+    .podaci .naziv-uredjaja{
+        font-size: 25px;
+        margin: 0px;
+    }
+    .podaci .cena-uredjaja{
+        font-size: 30px;
+        margin: 0px;
+    }
+}
